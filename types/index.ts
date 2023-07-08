@@ -31,4 +31,23 @@ transmission:string;
 year:number;
 
 }
+
+export interface filterProps {
+    manufacturer: string;
+    year: number;
+    fuel: number;
+    limit: number;
+    model: string;
+}
+
+export interface OptionProps {
+    title: string;
+    value: string;
+  }
+
+export interface CustomFilterProps {
+    title: string;
+    options: OptionProps[];
+  }
+  
    
