@@ -6,6 +6,7 @@ import { fetchCars } from '@/utils'
 import Image from 'next/image'
 
 import { fuels, yearsOfProduction } from '@/constants'
+import { HomeProps } from '@/types'
 
 export default async function Home({searchParams} : HomeProps) {
   const allCars = await fetchCars({

@@ -32,13 +32,19 @@ year:number;
 
 }
 
-export interface filterProps {
-    manufacturer: string;
-    year: number;
-    fuel: number;
-    limit: number;
-    model: string;
+
+export interface HomeProps {
+    searchParams: filterProps;
+  }
+
+  export interface filterProps {
+    manufacturer?: string;
+  year?: number;
+  model?: string;
+  limit?: number;
+  fuel?: string;
 }
+
 
 export interface OptionProps {
     title: string;
