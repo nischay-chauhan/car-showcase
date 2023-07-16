@@ -3,7 +3,6 @@ import CustomFilter from '@/components/CustomFilter'
 import SearchBar from '@/components/SearchBar'
 import CarCard from '@/components/CarCard'
 import { fetchCars } from '@/utils'
-import Image from 'next/image'
 
 import { fuels, yearsOfProduction } from '@/constants'
 import { HomeProps } from '@/types'
@@ -50,6 +49,7 @@ export default async function Home({searchParams} : HomeProps) {
 
             />
           </section>
+          
         ) : (
           <div className='home__error-container'>
             <h2 className='text-black text-x1'>Oops, no cars</h2>

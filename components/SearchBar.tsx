@@ -25,6 +25,7 @@ const SearchBar = () => {
 
   const router = useRouter();
 
+
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 

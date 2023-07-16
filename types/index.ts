@@ -38,7 +38,7 @@ export interface HomeProps {
   }
 
   export interface filterProps {
-    manufacturer?: string;
+  manufacturer?: string;
   year?: number;
   model?: string;
   limit?: number;
